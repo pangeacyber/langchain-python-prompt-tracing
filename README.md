@@ -1,14 +1,14 @@
 # langchain-python-prompt-tracing
 
-An example CLI tool in Python that demonstrates how to integrate Pangea's Secure
-Audit Log service into a LangChain app to maintain an audit log of prompts being
-sent to LLMs.
+An example CLI tool in Python that demonstrates how to integrate Pangea's
+[Secure Audit Log][] service into a LangChain app to maintain an audit log of
+prompts being sent to LLMs.
 
 ## Prerequisites
 
 - Python v3.12 or greater.
 - pip v24.2 or [uv][] v0.4.5.
-- A [Pangea account][Pangea signup] with all of the above services enabled.
+- A [Pangea account][Pangea signup] with Secure Audit Log enabled.
 - An [OpenAI API key][OpenAI API keys].
 
 ## Setup

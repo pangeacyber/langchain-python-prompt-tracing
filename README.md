@@ -1,4 +1,4 @@
-# langchain-python-prompt-tracing
+# Prompt Tracing for LangChain in Python
 
 An example CLI tool in Python demonstrating how to integrate Pangea's
 [Secure Audit Log][] service into a LangChain app to maintain an audit log of

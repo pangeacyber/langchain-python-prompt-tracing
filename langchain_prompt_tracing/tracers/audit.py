@@ -50,9 +50,12 @@ class PangeaAuditCallbackHandler(BaseTracer):
         self._client.log_bulk(
             [
                 {
-                    "event_type": "inference:user_prompt",
-                    "event_tools": run.name,
-                    "event_input": canonicalize_json(inputs).decode("utf-8"),
+                    "trace_id": run.trace_id,
+                    "type": "llm/start",
+                    "tools": {
+                        "invocation_params": run.extra.get("invocation_params", {}),
+                        "llm_input": canonicalize_json(inputs).decode("utf-8"),
+                    },
                 }
             ]
         )
